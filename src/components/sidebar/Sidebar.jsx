@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "../assets/img/avatar-1.png";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import {
   AiOutlineCalendar,
@@ -11,24 +12,24 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Sidebar = () => {
   return (
-    <div className="bg-container rounded-2xl ">
+    <div className="relative px-4 py-8 bg-container rounded-2xl">
       <img
-        className="h-36 w-36 rounded-3xl mx-auto -translate-y-20 "
-        src="https://art-template.ru/vcard1/assets/img/avatar-1.jpg"
+        className="absolute left-[50%] -translate-x-[50%] -translate-y-[70%] h-36 w-36 rounded-3xl "
+        src={Avatar}
         alt="avatar"
       />
-      <div className="text-center -translate-y-16">
-        <h1 className="text-heading text-2xl font-bold ">Felecia Brown</h1>
+      <div className="mt-16 text-center">
+        <h1 className="text-2xl font-bold text-heading ">Felecia Brown</h1>
         <div className="mt-3 text-center">
-          <span className="bg-container2 text-white px-3 py-1 rounded-2xl ">
+          <span className="px-3 py-1 text-white bg-container2 rounded-2xl ">
             Creative Director
           </span>
         </div>
-        <div className="mt-6 flex justify-center">
-          <span className="text-heading hover:text-blue-400 mr-4">
+        <div className="flex justify-center mt-6">
+          <span className="mr-4 text-heading hover:text-blue-400">
             <FaFacebookF />
           </span>
-          <span className="text-heading hover:text-blue-400 mr-4">
+          <span className="mr-4 text-heading hover:text-blue-400">
             <FaTwitter />
           </span>
           <span className="text-heading hover:text-blue-400">
@@ -36,7 +37,7 @@ const Sidebar = () => {
           </span>
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-center text-white">
+        <div className="flex flex-col items-center justify-center mt-8 text-white ">
           <div className="flex items-center">
             <AiOutlineCalendar className="mr-2" />
             March 12, 1995
